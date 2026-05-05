@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios - Café de Especialidad</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Nuestros Horarios</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">← Volver a Inicio</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Cronograma Semanal</h2>
+            
+            <!-- Agrego un atributo de borde para que la tabla se entienda visualmente-->
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Turno</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mañana (08:00 - 13:00)</td>
+                        <td>Atención normal</td>
+                        <td>Atención normal</td>
+                        <td>Atención normal</td>
+                        <td>Atención normal</td>
+                        <td>Atención normal</td>
+                    </tr>
+                    <tr>
+                        <td>Mediodía (13:00 - 14:00)</td>
+                        <!-- Uso de COLSPAN: Combina 5 columnas para marcar la hora de descanso -->
+                        <td colspan="5">Cerrado por limpieza y descanso del personal</td>
+                    </tr>
+                    <tr>
+                        <td>Tarde (14:00 - 19:00)</td>
+                        <td>Atención normal</td>
+                        <td>Atención normal</td>
+                        <!-- Uso de ROWSPAN: Combina 2 filas (tarde y noche) porque el miércoles cerramos antes -->
+                        <td rowspan="2">Cerrado por mantenimiento</td>
+                        <td>Atención normal</td>
+                        <td>Atención normal</td>
+                    </tr>
+                    <tr>
+                        <td>Noche (19:00 - 21:00)</td>
+                        <td>Degustación</td>
+                        <td>Degustación</td>
+                        <!-- La celda del miércoles no se pone porque ya está ocupada por el rowspan de arriba -->
+                        <td>Degustación</td>
+                        <td>Música acústica</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabajo Práctico - Sitio Web HTML y CSS</p>
+    </footer>
+
+</body>
+</html>
